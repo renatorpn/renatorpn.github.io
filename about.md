@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Passionate about computers, security and linux. Network Sec & DevSecOps background, looking to improve as a human and give something back to the community. I write in hope of learning and sharing.
 
-### More Information
+My views are my own - I value respect and love above all, so do feel encouraged to contact me and help me be a better version of myself. 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I've been involved and totally in love with the hardcore & DIY scene since a kid. Support your local scene and love with all your might! ❤️✊
