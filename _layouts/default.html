@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  
+    <!-indieweb stuff->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8i">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+
+    <link rel="icon" href="/assets/images/favicon.png"/>
+  </head>
+  <body>
+	  <div class="intro-header-outer">
+		  <div class="intro-header-inner">
+			  {{ site.title }}
+		  </div>
+	  </div>
+	
+	 <div class="navbar">
+		  {% include navigation.html %}
+		  </div>
+	  
+
+
+	  <div class="wrapper">
+		  {{ content }}
+	  </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Stylish&display=swap');
+@import "main";
+
+@font-face{
+	font-family: 'NegativeSystem';
+	src: url(negative_system.otf) format("opentype");
+}
+
+/* Header Styling */
+.intro-header-inner { 
+//font-family: 'IBM Plex Sans Arabic', sans-serif; 
+font-family: 'NegativeSystem';
+text-align: center; 
+font-size: 4em; 
+color: white;
+width: fit-content;
+height: fit-content;
+padding: 0.5rem; 
+transform: rotate(-2deg) skew(-2deg);
+margin: 0 auto;
+}
+
+.intro-header-inner:hover{
+	 color: red; 
+ }
+
+.intro-header-outer{
+	width: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+/*NavBar*/
+.navbar{
+	background-color: gray;
+	margin-bottom: 32px;
+	padding: 0.5rem;
+	border-style: outset;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: -webkit-calc(30em + (25px * 2));
+}
+
+/* Title  styling */
+h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans Arabic', sans-serif; text-transform: lowercase; color: black}
+
+body {background-color: black; color: black}
+
+
+
+/* Wrapper */
+.wrapper { max-width: -webkit-calc(30em + (25px * 2)); max-width: calc(30em + (25px * 2)); margin-right: auto; margin-left: auto; padding-top: 7px; padding-bottom: 7px; padding-right: 32px; padding-left: 32px; background-color: white; border-style: double; z-index: 0; position: relative; }
+
+
+
+/*
+
+below code is from https://maya.land/assets/main.css
+
+thanks, maya!
+
+/*
+
+/** Images */
+img, canvas { max-width: 100%; vertical-align: middle; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: pixelated; -ms-interpolation-mode: nearest-neighbor; }
+
+/** Figures */
+figcaption { opacity: 0; transition-timing-function: ease-in; transition: opacity 2.5s; }
+
+figure:hover figcaption { opacity: 1; transition: opacity 0.25s; }
+
+figure > img { display: block; opacity: 1; }
+
+figcaption { font-size: 15.75px; }
+
+
+/** Page content */
+.page-content { padding: 25px 0; flex: 1; }
+
+.page-heading { font-size: 36px; }
+
+.post-list-heading { font-size: 31.5px; }
+
+.post-list { margin-left: 0; list-style: none; }
+
+.post-list > li { margin-bottom: 25px; }
+
+.post-meta { font-size: 15.75px; color: #75470B; }
+
+.post-link { display: block; font-size: 27px; }
