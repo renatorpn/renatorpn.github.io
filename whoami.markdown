@@ -4,6 +4,8 @@ title: $ whoami
 permalink: /whoami/
 ---
 
+![my stinky face](/assets/images/me.gif)
+
 **Age:** 20-something\
 **Pronouns:** he/him\
 **Location:** europe
@@ -14,7 +16,7 @@ Welcome to the void. This is my [digital garden](https://maggieappleton.com/gard
 
 This site is made to as clean, light and easy to understand and deploy as possible, but be advised that I'm not a frontend developer and 90% of the time, I don't know what I'm doing. Feel free to use my code at your will, but do expect bad practices and stuff not working.
 
-During the day I work doing computer security stuff at $COMPANY. During the night I'm a necromancer of cursed software.
+During the day I work doing computer security stuff at `$COMPANY`. During the night I'm a necromancer of cursed software.
 
 This garden is powered by:
 * jekyll; 
