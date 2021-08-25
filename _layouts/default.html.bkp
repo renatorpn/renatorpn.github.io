@@ -20,23 +20,13 @@
 			  {{ site.title }}
 		  </div>
 	  </div>
-<div class="navbar-outer">
-
-	  	  <ul>
-		  {% for item in site.data.navigation %}
-		  
-		  <div class="navbar-inner">
-		  <li>
-			  <a href="{{ item.link }}">
-				  {{ item.name }}
-			  </a>
-		  </li>
+	
+	 <div class="navbar">
+		  {% include navigation.html %}
 		  </div>
+	  
 
-		  {% endfor %}
-	  </ul>
-	</div>
-  
+
 	  <div class="wrapper">
 		  {{ content }}
 	  </div>

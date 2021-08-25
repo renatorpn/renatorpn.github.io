@@ -9,44 +9,83 @@
 	src: url(negative_system.otf) format("opentype");
 }
 
+@font-face{
+	font-family: 'ModernDos';
+	src: url(ModernDOS8x16.ttf) format("opentype");
+}
+
+
+
 /* Header Styling */
 .intro-header-inner { 
 //font-family: 'IBM Plex Sans Arabic', sans-serif; 
-font-family: 'NegativeSystem';
-text-align: center; 
+font-family: 'ModernDos';
 font-size: 4em; 
 color: white;
 width: fit-content;
 height: fit-content;
 padding: 0.5rem; 
-transform: rotate(-2deg) skew(-2deg);
+//transform: rotate(-2deg) skew(-2deg);
 margin: 0 auto;
+margin-left: auto;
+margin-right:auto;
 }
 
-.intro-header-inner:hover{
-	 color: red; 
- }
 
 .intro-header-outer{
 	width: 100%;
 	padding-top: 32px;
 	padding-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
 }
 
 
 /*NavBar*/
-.navbar{
-	background-color: gray;
+
+
+.navbar-outer{
+	align: center;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-inner{
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+	text-align: center;
+	display: table-cell;
 	margin-bottom: 32px;
-	padding: 0.5rem;
-	border-style: outset;
+	padding: 1.75em;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: -webkit-calc(30em + (25px * 2));
+	list-style: none;
+	background-color: gray;
+	font-family: 'ModernDos';
+	font-size: 1.5em;	
 }
 
+.navbar-inner a{
+	color:black;
+}
+.navbar-inner:hover, .navbar-inner:active a{
+	background-color: teal;
+	color: blue;
+}
+
+.navbar-inner:hover a{
+	color: blue;
+}
+
+
+
 /* Title  styling */
-h1, h2, h3, h4, h5, h6 { font-family: 'IBM Plex Sans Arabic', sans-serif; text-transform: lowercase; color: black}
+h1, h2, h3, h4, h5, h6 { font-family: 'ModernDos', sans-serif; text-transform: lowercase; color: black}
 
 body {background-color: black; color: black}
 
