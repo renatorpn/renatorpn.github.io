@@ -53,6 +53,8 @@ margin-right:auto;
 	margin-right: auto;
 	align-items: center;
 	justify-content: center;
+	max-width: -webkit-calc(30em + (25px * 2));
+
 }
 
 .navbar-inner{
