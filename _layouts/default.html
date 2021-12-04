@@ -20,18 +20,19 @@
 			  {{ site.title }}
 		  </div>
 	  </div>
-<div class="navbar-outer">
+<div class="navbar">
 
 	  	  <ul>
-		  {% for item in site.data.navigation %}
-		  
-		  <div class="navbar-inner">
+		  {% for item in site.data.navigation %}			  <div class="navbar-inner">
+		  <!-- <div class="navbar-content"> -->
+			<!--<div class="navbar-content">-->
 		  <li>
 			  <a href="{{ item.link }}">
 				  {{ item.name }}
 			  </a>
 		  </li>
-		  </div>
+		  <!--</div>-->
+		  <!-- </div> -->
 
 		  {% endfor %}
 	  </ul>
@@ -40,5 +41,13 @@
 	  <div class="wrapper">
 		  {{ content }}
 	  </div>
+		<div class="bottom">
+			<img src="/assets/images/vim.vialle.love.anim.gif">
+			<img src="/assets/images/tor_button.gif">
+			<img src="/assets/images/jojo_button.gif">
+			<img src="/assets/images/antinft.gif">
+			<img src="/assets/images/poweredbyfedora.gif">
+			<img src="/assets/images/getquake.gif">
+		</div>
   </body>
 </html>
