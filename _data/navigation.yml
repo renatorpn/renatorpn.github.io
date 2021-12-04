@@ -4,4 +4,5 @@
   link: /blog
 - name: whoami
   link: /whoami
-
+- name: manpages
+  link: /manpages/manpages

@@ -7,9 +7,9 @@ layout: post
 ---
 Hi, I'm just another cowboy in the cyberspace.
 
-I like Linux and tearing vulnerable pieces of code apart. I also mangle some code of my own.
+I like Linux and mangling vulnerable pieces of code apart.
 
-In this cyberspace I keep a [blog](blog.md). I'm also making my own digital garden for note taking.
+In this cyberspace I keep a [blog](blog.md). I'm also making my own digital garden for note taking, which should be done anytime soon.
 
 See you, space cowboy...
 
@@ -18,3 +18,7 @@ See you, space cowboy...
 ✖ [fav music](music.md)
     
 ✖ [fav books](books.md)
+
+\
+\
+<sub>This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</sub>
