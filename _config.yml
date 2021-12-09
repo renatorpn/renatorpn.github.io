@@ -34,12 +34,18 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
-#config for manpages
+#config for blog 
+collections:
+  blog:
+    output: true
+    permalink: /:path/:categories/:name
+
 collections:
   manpages:
-    output: true
-    permalink: /:categories/:name
+    #    output: true
+    permalink: /manpages/:categories/:name
 
 # Sass settings
 #sass:
