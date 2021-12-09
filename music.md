@@ -1,6 +1,5 @@
 ---
 title: albums 
-layout: post
 ---
 
 ## O Rappa - Lado B Lado A (1999) 

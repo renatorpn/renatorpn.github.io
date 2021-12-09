@@ -37,7 +37,7 @@ Feel free to contact me if you want to develop or start an open source project.
 
 ## my links ☺
 
-* [twitter](https://twitter.com/renato_rpn);
+* [twitter](https://twitter.com/_renaton);
 * [github](https://github.com/renatorpn);
 * [email] **soon**;
 

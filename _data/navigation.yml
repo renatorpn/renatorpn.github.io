@@ -2,7 +2,7 @@
   link: /
 - name: blog
   link: /blog
-- name: whoami
-  link: /whoami
 - name: manpages
   link: /manpages/manpages
+- name: whoami
+  link: /whoami

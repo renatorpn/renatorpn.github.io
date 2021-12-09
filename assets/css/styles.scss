@@ -69,14 +69,14 @@ margin: 0 auto;
 	font-size: 1.5em;	
 	margin: 0 auto;
 	flex-grow: auto 1 1;
-	background-color: grey;
+	background-color: teal;
 }
 
 .navbar a{
 	color:black;
 }
 .navbar li:hover, .navbar li:active a{
-	background-color: teal;
+	background-color: darkgray;
 	color: blue;
 }
 
@@ -87,7 +87,7 @@ margin: 0 auto;
 
 
 /* Title  styling */
-h1, h2, h3, h4, h5, h6 { font-family: 'ModernDos', sans-serif; text-transform: lowercase; color: black}
+h1 { font-family: 'ModernDos', sans-serif; color: black}
 
 body {background-color: black; color: black}
 
