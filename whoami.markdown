@@ -4,11 +4,6 @@ title: $ whoami
 permalink: /whoami/
 ---
 
-<img src="/assets/images/me.gif" width="250px" alt="an animated gif of my ugly face wearing a hoodie, glasses and some vaporwave glitch effects"/>
-
-**Age:** 20-something\
-**Pronouns:** he/him\
-**Location:** europe
 
 # ★★ greetings, fellow human ★★
 
