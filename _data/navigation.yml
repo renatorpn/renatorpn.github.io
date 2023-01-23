@@ -1,8 +1,4 @@
-- name: home
+- name: whoami
   link: /
 - name: blog
   link: /blog
-- name: manpages
-  link: /manpages/manpages
-- name: whoami
-  link: /whoami
