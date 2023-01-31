@@ -53,9 +53,13 @@ collections:
 
 #this adds kramdown support which allows to parse html language inside markdown, enabled because it's easier to change image size and positioning
 #https://stackoverflow.com/questions/42378199/for-some-reason-markdown-images-wont-show-surrounded-by-html
+markdown: kramdown
+highlighter: rouge
+
 kramdown:
   parse_block_html: true
-    
+  input: GFM
+  syntax_highlighter: rouge
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

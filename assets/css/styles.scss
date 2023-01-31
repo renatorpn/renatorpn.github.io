@@ -111,8 +111,9 @@ body {background-color: black; color: black}
 	border-style: double; 
 	z-index: 0; 
 	position: relative; 
-	font-family: monospace; 
-	font-size: x-large; }
+	font-family: andale mono, monospace; 
+	font-size: 1.1em;
+ }
 
 
 
@@ -138,7 +139,7 @@ figcaption { font-size: 15.75px; }
 
 
 /** Page content */
-.page-content { padding: 25px 0; flex: 1;}
+.page-content { padding: 25px 0; flex: 2;}
 
 .page-heading { font-size: 36px; }
 
