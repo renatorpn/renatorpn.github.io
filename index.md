@@ -8,6 +8,7 @@ layout: default
 [me[at]renato.boo](mailto:me@renato.boo)
 [twitter](https://twitter.com/@renatoisnotreal)
 [github](https://github.com/renatorpn)
+<a rel="me" href="https://mastodon.social/@renatodoesnotexist">Mastodon</a>
 
 My name is Renato and I'm just another cowboy in the cyberspace. This is my home for posting my research notes and snippets.
 

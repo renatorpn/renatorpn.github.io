@@ -10,6 +10,8 @@ source "https://rubygems.org"
 #gem "jekyll", "~> 4.2.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
+gem "liquid", "~> 4.0.4"
+#gem "jekyll", github: "jekyll/jekyll", ref: "refs/pull/9248/head"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -28,6 +30,6 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-gem "github-pages", "~> 217", group: :jekyll_plugins
+gem "github-pages", "~> 228", group: :jekyll_plugins
 
 gem "webrick", "~> 1.7"
