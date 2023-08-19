@@ -5,7 +5,7 @@ layout: default
 ---
 # > whoami
 
-[me@renato.boo](mailto:me@renato.boo)
+[me[at]renato.boo](mailto:me@renato.boo)
 [twitter](https://twitter.com/@renatoisnotreal)
 [github](https://github.com/renatorpn)
 
