@@ -5,11 +5,16 @@ date:   2021-12-01 15:21:16 -0300
 tags: freebsd rootkit
 ---
 
+## DISCLAIMER
+
+> This is article is still a work in progress and will be updated as soon I get back to this. Originally the articlen was inteded to be a note with my learnings and not public. The original article included verbatum wording and examples from the book ***Designing BSD Rootkits: An Introduction by Joseph Kong***. I am currently rewriting the article to include my own examples and explanations as I want to avoid plagiarism.
+
+# Introduction
 I am starting these series to take notes of my study of freebsd kernel modules, writing rootkits and sharing code snippets. This series is largely based off ***Designing BSD Rootkits: An Introduction by Joseph Kong***.
 
 ## ring 0
 
-Why do we usually call kernel ring 0? In computer science there are these things called **protection rings**. The concept of protection rings exist to separate most privileged layers (therefore most vulnerable) from the least privileged layers. 
+Why do we usually call kernel ring 0? In computer science there are these things called **protection rings**. The concept of protection rings exist to separate most privileged layers (therefore most vulnerable) from the least privileged layers.
 
 As you can see you should never trust the user, therefore you can see there are 2 layers that separates the userland from the kernel-land and this the main point of entry to our rootkits: **device drivers**.
 
@@ -27,7 +32,7 @@ Modules can be configured as built-in or loadable. To be considered a loadable m
 
 In FreeBSD the Linux Kernel Module was renamed to Dynamic Kernel Linker (KLD). Under FreeBSD device drivers can roughly be broken down into two categories; character and network device drivers.
 
-(https://docs.freebsd.org/en/books/arch-handbook/driverbasics/)
+(<https://docs.freebsd.org/en/books/arch-handbook/driverbasics/>)
 
 Some commands for the KLD:
 
@@ -36,13 +41,12 @@ Some commands for the KLD:
 * ```kldunload``` - Unloads kernel modules
 
 In general all KLDs have:
+
 * A module event handler
 * A ```DECLARE_MODULE``` macro call
 (FreeBSD Device Drivers )
 
 ## **module event handler**
-
-Whenever ```kldload``` is invoked, a function known as ```module event handler``` is called. This function is responsible for the initialization and shutdown of the module. ```moduledata``` structure (declared in <sys/module.h>) stores some information about LKM:  its name and pointer to event handler function. (https://www.exploit-db.com/exploits/12926)
 
 ```c
 typedef int (*modeventhand_t)(module_t, int /* modeventtype_t */, void *);
@@ -52,13 +56,14 @@ typedef int (*modeventhand_t)(module_t, int /* modeventtype_t */, void *);
 
 ```c
 typedef enum modeventtype {
-	MOD_LOAD,
-	MOD_UNLOAD,
-	MOD_SHUTDOWN,
-	MOD_QUIESCE
+ MOD_LOAD,
+ MOD_UNLOAD,
+ MOD_SHUTDOWN,
+ MOD_QUIESCE
 } modeventtype_t;
 ```
-(https://github.com/freebsd/freebsd-src/blob/main/sys/sys/module.h)
+
+(<https://github.com/freebsd/freebsd-src/blob/main/sys/sys/module.h>)
 
 Generally, you’d use the `modeventtype_t` argument in a switch statement to set up different code blocks for each situation.
 
@@ -87,9 +92,9 @@ A declared`moduledata_t` struct.
  * Struct for registering modules statically via SYSINIT.
  */
 typedef struct moduledata {
-	const char	*name;		/* module name */
-	modeventhand_t  evhand;		/* event handler */
-	void		*priv;  /* extra data */
+ const char *name;  /* module name */
+ modeventhand_t  evhand;  /* event handler */
+ void  *priv;  /* extra data */
 } moduledata_t;
 ```
 
@@ -126,4 +131,4 @@ enum sysinit_elem_order {
 };
 ```
 
-(https://www.freebsd.org/cgi/man.cgi?query=DECLARE_MODULE&sektion=9&n=1). 
+(<https://www.freebsd.org/cgi/man.cgi?query=DECLARE_MODULE&sektion=9&n=1>).

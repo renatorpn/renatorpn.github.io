@@ -4,6 +4,11 @@ title:  "FreeBSD Rootkits pt. 2 - syscalls"
 date:   2021-12-01 15:21:16 -0300
 tags: freebsd rootkit
 ---
+
+## DISCLAIMER
+
+> This is article is still a work in progress and will be updated as soon I get back to this. Originally the article was inteded to be a note with my learnings and not public. The original article included verbatum wording and examples from the book ***Designing BSD Rootkits: An Introduction by Joseph Kong***. I am currently rewriting the article to include my own examples and explanations as I want to avoid plagiarism.
+
 *System call modules* are KLDs that install a syscall. A syscall is the mechanism an application uses to request a service from the OS kernel.
 
 The system call function implements the syscall. The prototype is defined in <sys/sysent.h> as such:
