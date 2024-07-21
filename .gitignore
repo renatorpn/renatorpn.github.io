@@ -5,3 +5,5 @@ _site
 vendor
 .bkp
 _drafts
+.vscode
+.ruby-version
