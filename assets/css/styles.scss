@@ -40,36 +40,48 @@ margin: 0 auto;
 }
 
 
-/*NavBar*/
-.navbar{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+/* Assuming the parent container has the class .container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Example height */
 }
 
-.navbar ul{
-	display: flex;
-	position: relative;
-	align-self: center;
-	align-items: flex-start;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style-type: none;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 35px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar ul li{
-	position: relative;
-	justify-content: center;
-	padding: 1em;
-	text-align: center;
-	font-family: 'ModernDos';
-	font-size: 1.5em;	
-	margin: 0 auto;
-	flex-grow: auto 1 1;
-	background-color: teal;
+.navbar ul {
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  position: relative;
+  padding: 1em;
+  text-align: center;
+  font-family: 'ModernDos';
+  font-size: 1.5em;
+  background-color: teal;
 }
 
 .navbar a{
