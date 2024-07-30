@@ -1,20 +1,12 @@
 ---
 layout: default
-title: tags
 ---
-<!doctype html>
-<html>
-  <head>
-    <title>tag #{{page.tag}}</title>
-  </head>
-  <body>
-    <h1>> tagged #{{page.tag}}</h1>
-    <ul>
-      {% for post in site.posts %}
-      {% if post.tags contains page.tag %}
-      <li><a class="post" href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+<div class="post">
+<h1>tagged #{{ page.tag }}</h1>
+<ul>
+{% for post in site.tags[page.tag] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}<br>
+  </li>
+{% endfor %}
+</ul>
+</div>

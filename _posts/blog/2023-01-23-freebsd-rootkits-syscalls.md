@@ -2,7 +2,8 @@
 layout: post
 title:  "FreeBSD Rootkits pt. 2 - syscalls"
 date:   2021-12-01 15:21:16 -0300
-tags: freebsd rootkit
+category: blog
+tags: freebsd reverse-engineering
 ---
 
 ## DISCLAIMER
