@@ -1,0 +1,9 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: create-tag-directories
+        name: Create Tag Directories
+        description: Ensure directories exist for each Jekyll tag.
+        entry: python create-tag-folder.py
+        language: python
+        files: \.md$
