@@ -111,8 +111,8 @@ body {background-color: black; color: black}
 
 /* Wrapper */
 .wrapper { 
-	max-width: -webkit-calc(30em + (100px * 2)); 
-	max-width: calc(30em + (100px * 2)); 
+	max-width: -webkit-calc(40em + (150px * 2)); 
+	max-width: calc(40em + (150px * 2)); 
 	margin-right: auto; 
 	margin-left: auto;
 	padding-top: 7px; 
@@ -177,3 +177,9 @@ figcaption { font-size: 15.75px; }
 	margin: 0 auto;
 	margin-top: 5%;
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
