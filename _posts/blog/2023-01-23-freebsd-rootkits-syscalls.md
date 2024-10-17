@@ -174,11 +174,11 @@ this returns a `module_stat` struct defined in <sys/module>:
 
 ```c
 struct module_stat {
-	int		version;	/* set to sizeof(struct module_stat) */
-	char		name[MAXMODNAME];
-	int		refs;
-	int		id;
-	modspecific_t	data;
+ int  version; /* set to sizeof(struct module_stat) */
+ char  name[MAXMODNAME];
+ int  refs;
+ int  id;
+ modspecific_t data;
 };
 
 typedef union modspecific {
