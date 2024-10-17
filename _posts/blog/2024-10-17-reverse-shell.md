@@ -1,8 +1,7 @@
 ---
-
 layout: post
 title:  "Reverse Shells, Linux and Letters"
-date:   2024-10-17 13:00:00 -0000
+date:  2024-10-17 
 category: blog
 tags: linux malware-dev
 ---
@@ -380,4 +379,4 @@ I hope you had fun reading this article and see you on my next (educational) mis
 * [Reverse Shells by cocomelonc](https://cocomelonc.github.io/tutorial/2021/09/11/reverse-shells.html)
 * [Programming Linux sockets, Part 1: Using TCP/IP - IBM](https://developer.ibm.com/tutorials/l-sock/)
 * [Understanding Unix Sockets - geeksforgeeks](https://www.geeksforgeeks.org/understanding-unix-sockets/)
-* [How to use the POSIX standard file descriptors stdin, stdout and stderr in Bash | jw bargsten](https://bargsten.org/bash/explanation-standard-file-descriptors/)
+* [How to use the POSIX standard file descriptors stdin, stdout and stderr in Bash jw bargsten](https://bargsten.org/bash/explanation-standard-file-descriptors/)
