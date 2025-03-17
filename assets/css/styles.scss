@@ -107,12 +107,10 @@ h4 { font-family: 'ModernDos', sans-serif; color: black}
 
 body {background-color: black; color: black}
 
-html, body {
-    overflow-x: hidden;
-}
+
 
 /* Wrapper */
-.wrapper { 
+.wrapper {
     max-width: calc(40em + (150px * 2)); /* Retain margins for desktop view */
     margin-right: auto; 
     margin-left: auto;
@@ -158,14 +156,6 @@ html, body {
         padding-left: 20px;
     }
 
-    .navbar ul li {
-        padding: 0.75em;
-    }
-
-    .intro-header-inner {
-        font-size: 3em;
-    }
-}
 
 /* Desktop styles */
 @media (min-width: 1025px) {
