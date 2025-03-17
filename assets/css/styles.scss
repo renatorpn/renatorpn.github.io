@@ -113,7 +113,7 @@ html, body {
 
 /* Wrapper */
 .wrapper { 
-    max-width: 100%; /* Change from calc(40em + (150px * 2)) to 100% */
+    max-width: calc(40em + (150px * 2)); /* Retain margins for desktop view */
     margin-right: auto; 
     margin-left: auto;
     padding-top: 7px; 
@@ -131,6 +131,7 @@ html, body {
 /* Mobile styles */
 @media (max-width: 600px) {
     .wrapper {
+        max-width: 100%;
         padding-right: 10px;
         padding-left: 10px;
     }
@@ -152,6 +153,7 @@ html, body {
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 1024px) {
     .wrapper {
+        max-width: 100%;
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -162,6 +164,15 @@ html, body {
 
     .intro-header-inner {
         font-size: 3em;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .wrapper {
+        max-width: calc(40em + (150px * 2)); /* Retain margins for desktop view */
+        padding-right: 32px;
+        padding-left: 32px;
     }
 }
 
