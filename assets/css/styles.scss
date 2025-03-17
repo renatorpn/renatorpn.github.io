@@ -110,24 +110,61 @@ body {background-color: black; color: black}
 
 
 /* Wrapper */
-.wrapper { 
-	max-width: -webkit-calc(40em + (150px * 2)); 
-	max-width: calc(40em + (150px * 2)); 
-	margin-right: auto; 
-	margin-left: auto;
-	padding-top: 7px; 
-	padding-bottom: 7px; 
-	padding-right: 32px; 
-	padding-left: 32px; 
-	background-color: white; 
-	border-style: double; 
-	z-index: 0; 
-	position: relative; 
-	font-family: andale mono, monospace; 
-	font-size: 1.1em;
- }
+.wrapper {
+    max-width: calc(40em + (150px * 2)); /* Retain margins for desktop view */
+    margin-right: auto; 
+    margin-left: auto;
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    padding-right: 32px; 
+    padding-left: 32px; 
+    background-color: white; 
+    border-style: double; 
+    z-index: 0; 
+    position: relative; 
+    font-family: andale mono, monospace; 
+    font-size: 1.1em;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .intro-header-inner {
+        font-size: 2em;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .wrapper {
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 
 
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .wrapper {
+        max-width: calc(40em + (150px * 2)); /* Retain margins for desktop view */
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
 
 /*
 
